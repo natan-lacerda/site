@@ -3,6 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7JKZ97HLPV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent','default',{'analytics_storage':'denied','ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied'});
+  try{if(document.cookie.indexOf('nl_consent=granted')>-1){gtag('consent','update',{'analytics_storage':'granted'});}}catch(e){}
+  gtag('js', new Date());
+  gtag('config', 'G-7JKZ97HLPV');
+</script>
 <title>Natan Lacerda Advocacia — Advogado Trabalhista, Consumidor e Família | Atendimento em todo o Brasil</title>
 <meta name="description" content="Advocacia com foco em Direito Trabalhista, do Consumidor e de Família, com atendimento 100% online em todo o Brasil. Dr. Natan Lacerda — OAB/PR 70.492.">
 <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAADNklEQVR42q1Wy47cRBS951b19PQwk0wmkGGkPKQRQoIFzAIRRYAELBASjy/gD/IXiI9ig9hEYpFNIEFC4pEoQEgCTLc7bZddrqrLwm13+5mZhFar267rOr51z7kPvP3SJSISKn+qj1T/9fXaapepMJYWLT24zw+9fMEpoDsBnmbRp4Hud1x6dpHoct+z4A5AV/v0ADRRr2MngW5xsMaE0ADyUECkRaf+XwJS86lbRfI0r9ftIMXsfag53iNpJiERGUBv2JkRvMznSbEkg+hExAO6Lj41EYskSba9s/np528p5iCdERUhqYLNDSOw/DIAoEHAxnh0YX937/zO9eufKM0SBG236ivcINCkeRzbNHWJyU2aA0QgIQHIWndwsPvlV18AHEVxx4nrGVvc6YpAANa6ozcvvri39WRhNFM0z3786W+loBVLyTKzqguaBqoZkXAVZYCMsR++/9rBwd6tHx788tv0zM74s49fHWnOMscKxWNBhETEO1k62eH1GhONPACsdbNZMj1OQqDfb0SvHO599MHhdzf/fPR4wYwQQm6tkDiXLwHroG3K9ZqkQCQiwgylWSmcPTO+d392PDXvXbvy693jW7f/Eh/ieUQiZrGQIB053GKGl+QIiQgAE6dZZkEgIefDZKITk3/9zc8v72+/c/VynGRxNPcuj6azkgRpK6cMnlCRaNWpAJjEZGkGRsFMCKIVtOJvb9xNTP7u1UtJbLz3WWqps6hIVSWXwdPrOgMoWRibWsKKsQJja3P0/Z2Hm2N95eK5EOTJLHY+SKCAlvBRe+2qXENABOe89wGERsYHkcnW6I8HkUktRILLNzeUBZjL8lSeOHdhnRocndtf3QbZfmHD+5CkjoE2dQAOL599/E/yxusX/p0a74NSrEfMgHOeQdHC3rsfMaMiHke7++sQPgQQMaNPFTb3WrO1XmtUjldtACCleL2s64bOFIOayq5djTeUiEwmugRBY8Zp9Ixmy2y1pGaUiv2rJOhoYn1jSx1+qPucpEOVRj3g7PPgSu9k9wyjy+DZ9cDsMBzcTn+HOTiJp11jE4ae0yeahNp9RPoszT16aNJZFanTnGt1CSL5D0oAW2JNCvjaAAAAAElFTkSuQmCC">
@@ -199,6 +209,18 @@
   .socials a:hover{color:var(--cobre-claro);border-color:var(--cobre);background:rgba(216,183,132,.1);transform:translateY(-2px)}
   .socials svg{width:18px;height:18px;fill:currentColor}
   @media(max-width:640px){.socials{justify-content:center}}
+
+  .lgpd-banner{position:fixed;left:0;right:0;bottom:0;z-index:90;background:rgba(27,7,11,.97);backdrop-filter:blur(10px);border-top:1px solid var(--vinho-linha);padding:18px 24px;display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;transform:translateY(120%);transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+  .lgpd-banner.show{transform:none}
+  .lgpd-txt{font-size:.88rem;color:var(--creme-txt-2);max-width:66ch;line-height:1.55;margin:0}
+  .lgpd-txt a{color:var(--cobre);text-decoration:underline}
+  .lgpd-actions{display:flex;gap:10px;flex-shrink:0}
+  .lgpd-btn{font-family:'Outfit',sans-serif;font-weight:500;font-size:.84rem;padding:11px 24px;border-radius:2px;cursor:pointer;border:1px solid transparent;transition:transform .2s,background .2s}
+  .lgpd-btn.accept{background:var(--gold-grad);color:var(--vinho-esc)}
+  .lgpd-btn.accept:hover{transform:translateY(-1px)}
+  .lgpd-btn.ghost{background:transparent;border-color:var(--cobre-esc);color:var(--cobre-claro)}
+  .lgpd-btn.ghost:hover{background:rgba(216,183,132,.1)}
+  @media(max-width:640px){.lgpd-banner{flex-direction:column;gap:14px;padding:16px 18px}.lgpd-actions{width:100%}.lgpd-btn{flex:1}}
 </style>
 </head>
 <body>
@@ -209,7 +231,7 @@
 <header class="nav">
   <div class="bar">
     <a href="#topo" class="nav-logo logo-real bg-mono-gold" aria-label="Natan Lacerda Advocacia"></a>
-    <a class="btn btn-primary" href="https://wa.me/5541999657098?text=Ol%C3%A1%2C%20Dr.%20Natan.%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20jur%C3%ADdica." target="_blank" rel="noopener"><svg><use href="#ic-chat"/></svg><span>Falar no WhatsApp</span></a>
+    <a class="btn btn-primary" href="https://wa.me/5541999657098?text=Ol%C3%A1%2C%20Dr.%20Natan%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento%20para%20o%20meu%20caso" target="_blank" rel="noopener"><svg><use href="#ic-chat"/></svg><span>Falar no WhatsApp</span></a>
   </div>
 </header>
 
@@ -225,7 +247,7 @@
     <h1>Comece com a <em>orientação certa</em></h1>
     <p class="sub">Atendimento pessoal, claro e sigiloso</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="https://wa.me/5541999657098?text=Ol%C3%A1%2C%20Dr.%20Natan.%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20jur%C3%ADdica." target="_blank" rel="noopener"><svg><use href="#ic-chat"/></svg>Falar com o escritório</a>
+      <a class="btn btn-primary" href="https://wa.me/5541999657098?text=Ol%C3%A1%2C%20Dr.%20Natan%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento%20para%20o%20meu%20caso" target="_blank" rel="noopener"><svg><use href="#ic-chat"/></svg>Falar com o escritório</a>
     </div>
     <div class="hero-note">Atendimento 100% online · em todo o Brasil</div>
   </div>
@@ -247,7 +269,7 @@
     </div>
     <div class="pain-cta reveal">
       <p>O primeiro passo é simples: uma conversa.</p>
-      <a class="btn btn-primary" href="https://wa.me/5541999657098?text=Ol%C3%A1%2C%20Dr.%20Natan.%20Gostaria%20de%20conversar%20sobre%20o%20meu%20caso." target="_blank" rel="noopener"><svg><use href="#ic-chat"/></svg>Contar o meu caso</a>
+      <a class="btn btn-primary" href="https://wa.me/5541999657098?text=Ol%C3%A1%2C%20Dr.%20Natan%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento%20para%20o%20meu%20caso" target="_blank" rel="noopener"><svg><use href="#ic-chat"/></svg>Contar o meu caso</a>
     </div>
   </div>
 </section>
@@ -289,7 +311,7 @@
     <div class="bb-label">100% Online</div>
     <h2>Atendimento em <em>todo o Brasil</em></h2>
     <p>Do primeiro contato pelo WhatsApp ao acompanhamento do processo — com a mesma proximidade, onde quer que você esteja.</p>
-    <a class="btn btn-wine" href="https://wa.me/5541999657098?text=Ol%C3%A1%2C%20Dr.%20Natan.%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20jur%C3%ADdica." target="_blank" rel="noopener"><svg><use href="#ic-chat"/></svg>Falar com o escritório</a>
+    <a class="btn btn-wine" href="https://wa.me/5541999657098?text=Ol%C3%A1%2C%20Dr.%20Natan%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento%20para%20o%20meu%20caso" target="_blank" rel="noopener"><svg><use href="#ic-chat"/></svg>Falar com o escritório</a>
   </div>
 </section>
 
@@ -320,7 +342,7 @@
         <p style="margin-bottom:14px">À frente do <strong style="color:var(--creme-txt);font-weight:500">Natan Lacerda Advocacia</strong>, o advogado Natan Michel de Lacerda atua com compromisso, estratégia e dedicação na defesa dos direitos de seus clientes.</p>
         <p style="margin-bottom:14px">Com <strong style="color:var(--creme-txt);font-weight:500">atendimento em todo o Brasil</strong>, o escritório oferece uma advocacia moderna e acessível, unindo experiência jurídica, atendimento personalizado e acompanhamento próximo em cada etapa do processo.</p>
         <p>Aqui, cada caso é tratado com <strong style="color:var(--creme-txt);font-weight:500">seriedade, transparência e sigilo</strong>, sempre com linguagem clara e foco na busca da melhor solução jurídica para o cliente.</p>
-        <a class="btn btn-ghost" href="https://wa.me/5541999657098?text=Ol%C3%A1%2C%20Dr.%20Natan.%20Gostaria%20de%20agendar%20um%20atendimento." target="_blank" rel="noopener"><svg><use href="#ic-chat"/></svg>Agendar um atendimento</a>
+        <a class="btn btn-ghost" href="https://wa.me/5541999657098?text=Ol%C3%A1%2C%20Dr.%20Natan%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento%20para%20o%20meu%20caso" target="_blank" rel="noopener"><svg><use href="#ic-chat"/></svg>Agendar um atendimento</a>
       </div>
     </div>
   </div>
@@ -360,7 +382,7 @@
   <div class="wrap reveal">
     <h2 class="display">Dê o primeiro passo com <em>segurança</em></h2>
     <p>Conte o seu caso e receba uma orientação clara. O atendimento é pessoal, humano e sigiloso.</p>
-    <a class="btn btn-primary" href="https://wa.me/5541999657098?text=Ol%C3%A1%2C%20Dr.%20Natan.%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20jur%C3%ADdica." target="_blank" rel="noopener"><svg><use href="#ic-chat"/></svg>Falar com o escritório no WhatsApp</a>
+    <a class="btn btn-primary" href="https://wa.me/5541999657098?text=Ol%C3%A1%2C%20Dr.%20Natan%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento%20para%20o%20meu%20caso" target="_blank" rel="noopener"><svg><use href="#ic-chat"/></svg>Falar com o escritório no WhatsApp</a>
     <div class="phone">ou ligue: (41) 99965-7098</div>
   </div>
 </section>
@@ -385,11 +407,11 @@
       </div>
     </div>
     <p class="disc">Este site tem caráter meramente informativo e não constitui oferta de serviços, captação de clientela ou promessa de resultado, em conformidade com o Código de Ética e Disciplina da OAB e o Provimento nº 205/2021. Cada caso é único e os resultados dependem de suas circunstâncias específicas.</p>
-    <p class="copy">© 2026 Natan Lacerda Advocacia · Todos os direitos reservados</p>
+    <p class="copy"><a href="/politica-de-privacidade.html" style="color:var(--cobre)">Política de Privacidade</a> &nbsp;·&nbsp; © 2026 Natan Lacerda Advocacia · Todos os direitos reservados</p>
   </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/5541999657098?text=Ol%C3%A1%2C%20Dr.%20Natan.%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20jur%C3%ADdica." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg><use href="#ic-chat"/></svg><span>WhatsApp</span></a>
+<a class="wa-float" href="https://wa.me/5541999657098?text=Ol%C3%A1%2C%20Dr.%20Natan%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento%20para%20o%20meu%20caso" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg><use href="#ic-chat"/></svg><span>WhatsApp</span></a>
 
 <script>
   // reveal on scroll
@@ -403,6 +425,25 @@
       if(!open)qa.classList.add('open');
     });
   });
+</script>
+
+<div id="lgpd" class="lgpd-banner" role="dialog" aria-label="Aviso de cookies">
+  <p class="lgpd-txt">Utilizamos cookies para analisar o tráfego e melhorar a sua experiência de navegação. Você pode aceitar ou recusar. Saiba mais na nossa <a href="/politica-de-privacidade.html">Política de Privacidade</a>.</p>
+  <div class="lgpd-actions">
+    <button class="lgpd-btn ghost" id="lgpd-reject">Recusar</button>
+    <button class="lgpd-btn accept" id="lgpd-accept">Aceitar</button>
+  </div>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('lgpd');
+  function setC(v){try{document.cookie='nl_consent='+v+';max-age=31536000;path=/;samesite=lax';}catch(e){}}
+  function has(){try{return document.cookie.indexOf('nl_consent=')>-1;}catch(e){return false;}}
+  if(!has()){setTimeout(function(){b.classList.add('show');},800);}
+  var ac=document.getElementById('lgpd-accept'), rj=document.getElementById('lgpd-reject');
+  ac&&ac.addEventListener('click',function(){setC('granted');try{gtag('consent','update',{'analytics_storage':'granted'});}catch(e){}b.classList.remove('show');});
+  rj&&rj.addEventListener('click',function(){setC('denied');b.classList.remove('show');});
+})();
 </script>
 </body>
 </html>
