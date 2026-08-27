@@ -445,5 +445,20 @@
   rj&&rj.addEventListener('click',function(){setC('denied');b.classList.remove('show');});
 })();
 </script>
+
+<script>
+  // Dispara evento GA4 em qualquer clique nos botões de WhatsApp
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href*="wa.me"]');
+    if(!a) return;
+    try{
+      gtag('event','clique_whatsapp',{
+        'link_url': a.href,
+        'link_text': (a.innerText || a.getAttribute('aria-label') || '').trim().slice(0,100),
+        'method': 'whatsapp'
+      });
+    }catch(err){}
+  });
+</script>
 </body>
 </html>
